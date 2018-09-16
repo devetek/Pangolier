@@ -1,0 +1,49 @@
+<div class="header-base">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="title-base text-left">
+                    <h1>Portfolio</h1>
+                    <p>Projects and clients portfolio</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <ol class="breadcrumb b white">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li class="active">Portfolio</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section-empty section-item">
+    <div class="container content">
+        <div class="maso-list">
+            <div class="maso-box row" data-options="anima:fade-in">
+
+                <div ng-repeat="x in projects" class="maso-item col-md-4 col-sm-6 cat1 cat5">
+                    <div class="advs-box advs-box-multiple boxed-inverse" data-anima="scale-up" data-trigger="hover">
+                        <a class="img-box"><img class="anima" src="../images/projek/{{x.foto_utama}}" alt="" /></a>
+                        <div class="circle anima"><i class="fa fa-home"></i></div>
+                        <div class="advs-box-content">
+                            <h3>{{x.nama}}</h3>
+                            <ul class="list-texts">
+                                <li><b>Untuk</b>  {{x.untuk}}</li>
+                                <li><b>User</b>  {{x.user}}</li>
+                                <li><b>Posisi</b>  {{x.terlibat}}</li>
+                            </ul>
+                            <p>
+                                <!--{{x.keterangan}}-->
+                            </p>
+                            <a class="btn-text" href="#">Enter now </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<i class="scroll-top scroll-top-mobile show fa fa-sort-asc"></i>
