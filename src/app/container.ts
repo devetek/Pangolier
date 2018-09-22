@@ -1,7 +1,8 @@
+import config from "@app/config/app";
 import { Component } from "@angular/core";
 
 @Component({
-  selector: "devetek-app-profile",
+  selector: "profile-devetek",
   templateUrl: "./container.html"
 })
 export class AppComponent {
@@ -10,8 +11,8 @@ export class AppComponent {
   url: string;
 
   constructor() {
-    this.title = "DJancuk";
-    this.description = "Youre full of the dJancukerz";
-    this.url = "http://www.terpusat.com";
+    this.title = config.title;
+    this.description = config.description;
+    this.url = config.host;
   }
 }

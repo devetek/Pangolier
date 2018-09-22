@@ -4,6 +4,7 @@ const appRootDir = require("app-root-dir");
 const webpack = require("webpack");
 const openBrowserPlugin = require("open-browser-webpack-plugin");
 const pkg = require("../../package.json");
+const getPath = require("./../baseDir");
 
 const developmentPlugins = () => {
   if (process.env.NODE_ENV === "development") {
@@ -27,9 +28,9 @@ const webpackConfig = {
   context: appRootDir.get(),
   mode: process.env.NODE_ENV,
   performance: false,
-  entry: path.resolve(appRootDir.get(), "./src/server.js"),
+  entry: getPath("./src/server.js"),
   output: {
-    path: path.resolve(appRootDir.get(), "./dist"),
+    path: getPath("./dist"),
     filename: "server.js"
   },
 

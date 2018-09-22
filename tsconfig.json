@@ -11,6 +11,14 @@
     "strictNullChecks": false,
     "strictPropertyInitialization": false,
     "suppressImplicitAnyIndexErrors": true,
-    "target": "es5"
+    "target": "es5",
+    "baseUrl": "src",
+    "moduleResolution": "node",
+    "paths": {
+      "@app/*": ["app/*"],
+      "@layout/*": ["app/layout/*"],
+      "@routes/*": ["app/routes/*"],
+      "@modules/*": ["app/modules/*"]
+    }
   }
 }

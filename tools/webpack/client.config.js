@@ -5,18 +5,25 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 const ScriptExtPlugin = require("script-ext-html-webpack-plugin");
 const AngularCompilerPlugin = require("@ngtools/webpack").AngularCompilerPlugin;
 const pkg = require("../../package.json");
+const getPath = require("./../baseDir");
 
 const webpackConfig = {
   target: "web",
   context: appRootDir.get(),
   mode: process.env.NODE_ENV,
   devtool: "cheap-module-source-map",
-  entry: path.resolve(appRootDir.get(), "./src/main.ts"),
+  entry: getPath("./src/main.ts"),
   output: {
-    path: path.resolve(appRootDir.get(), "./dist"),
+    path: getPath("./dist"),
     filename: "app.js"
   },
   resolve: {
+    alias: {
+      "@app": getPath("./src/app"),
+      "@layout": getPath("./src/app/layout"),
+      "@routes": getPath("./src/app/routes"),
+      "@modules": getPath("./src/app/modules")
+    },
     extensions: [".ts", ".js"]
   },
   optimization: {
@@ -38,16 +45,16 @@ const webpackConfig = {
       }
     ]),
     new HtmlWebpackPlugin({
-      template: path.resolve(appRootDir.get(), "./src/index.html"),
-      output: path.resolve(appRootDir.get(), "./dist"),
+      template: getPath("./src/index.html"),
+      output: getPath("./dist"),
       inject: "head"
     }),
     new ScriptExtPlugin({
       defaultAttribute: "defer"
     }),
     new AngularCompilerPlugin({
-      tsConfigPath: path.resolve(appRootDir.get(), "./tsconfig.json"),
-      entryModule: path.resolve(appRootDir.get(), "./src/app/init#AppModule"),
+      tsConfigPath: getPath("./tsconfig.json"),
+      entryModule: getPath("./src/app/init#AppModule"),
       sourceMap: true
     })
   ],
