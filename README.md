@@ -2,6 +2,12 @@
 
 Company Profile Web for devetek.com, describe who we're and what we do. Please read this description bellow
 
+## TODO:
+
+- Remove useless assets
+- Remove useless folders and files
+- Remove useless libs, replace with native javascript
+
 ## Technology Stuck
 
 - node
