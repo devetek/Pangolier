@@ -13,6 +13,6 @@ app.get("/*", (req, res) => {
   res.render("./index", { req, res });
 });
 
-app.listen(6500, () => {
+app.listen(process.env.PORT, () => {
   console.log(`Listening on: http://${process.env.HOST}:${process.env.PORT}`);
 });

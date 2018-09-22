@@ -22,7 +22,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "b853b5d2490ccbd33c69";
+/******/ 	var hotCurrentHash = "7fa8e473cf8f408c8e77";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -2140,7 +2140,7 @@ eval("module.exports = function(module) {\n\tif (!module.webpackPolyfill) {\n\t\
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var express__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! express */ \"./node_modules/express/index.js\");\n/* harmony import */ var express__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(express__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var ejs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ejs */ \"./node_modules/ejs/lib/ejs.js\");\n/* harmony import */ var ejs__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(ejs__WEBPACK_IMPORTED_MODULE_1__);\n\n\nconst app = express__WEBPACK_IMPORTED_MODULE_0___default()();\napp.engine(\"html\", ejs__WEBPACK_IMPORTED_MODULE_1__[\"renderFile\"]);\napp.set(\"view engine\", \"html\");\napp.set(\"views\", \"dist\");\napp.use(\"/\", express__WEBPACK_IMPORTED_MODULE_0___default.a.static(\"dist\", {\n  index: false\n}));\napp.get(\"/*\", (req, res) => {\n  res.render(\"./index\", {\n    req,\n    res\n  });\n});\napp.listen(6500, () => {\n  console.log(`Listening on: http://${process.env.HOST}:${process.env.PORT}`);\n});\n\n//# sourceURL=webpack:///./src/server.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var express__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! express */ \"./node_modules/express/index.js\");\n/* harmony import */ var express__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(express__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var ejs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ejs */ \"./node_modules/ejs/lib/ejs.js\");\n/* harmony import */ var ejs__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(ejs__WEBPACK_IMPORTED_MODULE_1__);\n\n\nconst app = express__WEBPACK_IMPORTED_MODULE_0___default()();\napp.engine(\"html\", ejs__WEBPACK_IMPORTED_MODULE_1__[\"renderFile\"]);\napp.set(\"view engine\", \"html\");\napp.set(\"views\", \"dist\");\napp.use(\"/\", express__WEBPACK_IMPORTED_MODULE_0___default.a.static(\"dist\", {\n  index: false\n}));\napp.get(\"/*\", (req, res) => {\n  res.render(\"./index\", {\n    req,\n    res\n  });\n});\napp.listen(process.env.PORT, () => {\n  console.log(`Listening on: http://${process.env.HOST}:${process.env.PORT}`);\n});\n\n//# sourceURL=webpack:///./src/server.js?");
 
 /***/ }),
 

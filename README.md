@@ -17,3 +17,8 @@ No matter here, just ignore this section.
 ## Contributors
 
 - Hamba Allah
+
+## References
+
+- [Angular Basic Routing](https://blog.angular-university.io/angular2-router/)
+- [Angular Nested Routing](https://blog.angular-university.io/angular-2-router-nested-routes-and-nested-auxiliary-routes-build-a-menu-navigation-system/)
