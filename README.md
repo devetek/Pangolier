@@ -9,6 +9,7 @@ Company Profile Web for devetek.com, describe who we're and what we do. Please r
 - CSS
 - Javascript
 - Typescript
+
   check package.json for details our tech stuff
 
 ## Dependencies
