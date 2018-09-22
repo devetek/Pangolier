@@ -4,11 +4,12 @@ Company Profile Web for devetek.com, describe who we're and what we do. Please r
 
 ## Technology Stuck
 
-- node >= 8.11.3
+- node
 - HTML
 - CSS
-- Javascript (Angular 6, Webpack 4)
+- Javascript
 - Typescript
+  check package.json for details our tech stuff
 
 ## Dependencies
 
