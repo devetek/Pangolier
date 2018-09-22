@@ -25,6 +25,7 @@ Company Profile Web for devetek.com, describe who we're and what we do. Please r
 
 ```sh
 cd web_dev
+cp .env.example .env
 yarn
 yarn start
 ```
