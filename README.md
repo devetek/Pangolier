@@ -47,5 +47,6 @@ yarn start
 
 ## References
 
-- [Angular Basic Routing](https://blog.angular-university.io/angular2-router/)
-- [Angular Nested Routing](https://blog.angular-university.io/angular-2-router-nested-routes-and-nested-auxiliary-routes-build-a-menu-navigation-system/)
+- [Angular basic routing](https://blog.angular-university.io/angular2-router/)
+- [Angular nested routing](https://blog.angular-university.io/angular-2-router-nested-routes-and-nested-auxiliary-routes-build-a-menu-navigation-system/)
+- [Angular advance routing and layouting](https://thinkster.io/tutorials/building-real-world-angular-2-apps/page-layout-and-routing)
