@@ -30,9 +30,10 @@ yarn
 yarn start
 ```
 
-## Feature Stuff
+## devTech Feature
 
-No matter here, just ignore this section.
+- Hot reload
+- Eslint
 
 ## Contributors
 
