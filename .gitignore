@@ -6,6 +6,7 @@
 
 # local cache
 .vscode
+.DS_Store
 
 # local file cache
 .env
