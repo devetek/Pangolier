@@ -51,7 +51,6 @@ const loadCss = (arrOfCSS: Array<string> = [], options: object = {}) => {
     }
   });
 
-  alert("done");
   return;
 };
 
