@@ -14,35 +14,31 @@
  */
 
 const loadCss = (arrOfCSS: Array<string> = [], options: object = {}) => {
-  if (
-    typeof document === "undefined" ||
-    !arrOfCSS.length ||
-    arrOfCSS.length === 0
-  ) {
+  if (typeof document === 'undefined' || !arrOfCSS.length || arrOfCSS.length === 0) {
     return;
   }
 
   const defaultPptions = {
-    inject: "body",
-    ...options
+    inject: 'body',
+    ...options,
   };
   const { inject } = defaultPptions;
 
   arrOfCSS.map(css => {
-    const newElement = document.createElement("link");
+    const newElement = document.createElement('link');
 
-    newElement.rel = "stylesheet";
+    newElement.rel = 'stylesheet';
     newElement.href = css;
-    newElement.type = "text/css";
+    newElement.type = 'text/css';
 
-    if (inject === "head") {
-      const goDefer = document.getElementsByTagName("link")[0];
+    if (inject === 'head') {
+      const goDefer = document.getElementsByTagName('link')[0];
 
       goDefer.parentNode.insertBefore(newElement, goDefer);
     } else {
-      const body = document.getElementsByTagName("body")[0];
+      const body = document.getElementsByTagName('body')[0];
 
-      if (inject === "endOfBody") {
+      if (inject === 'endOfBody') {
         const firstChild = body.firstChild;
         body.insertBefore(newElement, firstChild);
       } else {
@@ -50,6 +46,8 @@ const loadCss = (arrOfCSS: Array<string> = [], options: object = {}) => {
       }
     }
   });
+
+  console.log('www');
 
   return;
 };
