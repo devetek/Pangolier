@@ -4,9 +4,9 @@ Company Profile Web for devetek.com, describe who we're and what we do. Please r
 
 ## TODO:
 
-- Remove useless assets
-- Remove useless folders and files
 - Remove useless libs, replace with native javascript
+- Continuous integration vs. continuous delivery vs. continuous deployment integration, follow [TideHunter](https://github.com/prakasa1904/webhook-terpusat-mpw)
+- Docker integration (inporgress, have some bug on network communication)
 
 ## Stuck In tech
 
