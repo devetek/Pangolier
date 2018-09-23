@@ -1,6 +1,21 @@
 {
   "parser": "typescript-eslint-parser",
-  "plugins": ["typescript"],
+  "plugins": ["typescript", "import", "jest"],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "amd": true,
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "node": true,
+    "jest": true
+  },
   "rules": {
     "no-console": "error",
     "typescript/rule-name": "none",

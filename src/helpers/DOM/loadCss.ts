@@ -14,7 +14,11 @@
  */
 
 const loadCss = (arrOfCSS: Array<string> = [], options: object = {}) => {
-  if (typeof document === 'undefined' || !arrOfCSS.length || arrOfCSS.length === 0) {
+  if (
+    typeof document === 'undefined' ||
+    !arrOfCSS.length ||
+    arrOfCSS.length === 0
+  ) {
     return;
   }
 
@@ -46,8 +50,6 @@ const loadCss = (arrOfCSS: Array<string> = [], options: object = {}) => {
       }
     }
   });
-
-  console.log('www');
 
   return;
 };

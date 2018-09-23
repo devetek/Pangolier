@@ -1,18 +1,21 @@
-import express from "express";
-import { renderFile } from "ejs";
+import express from 'express';
+import { renderFile } from 'ejs';
 
+const debug = require('debug')('server');
 const app = express();
 
-app.engine("html", renderFile);
-app.set("view engine", "html");
-app.set("views", "dist");
+debug('Starting...');
 
-app.use("/", express.static("dist", { index: false }));
+app.engine('html', renderFile);
+app.set('view engine', 'html');
+app.set('views', 'dist');
 
-app.get("/*", (req, res) => {
-  res.render("./index", { req, res });
+app.use('/', express.static('dist', { index: false }));
+
+app.get('/*', (req, res) => {
+  res.render('./index', { req, res });
 });
 
 app.listen(process.env.PORT, () => {
-  console.log(`Listening on: http://${process.env.HOST}:${process.env.PORT}`);
+  debug(`Listening on: http://${process.env.HOST}:${process.env.PORT}`);
 });

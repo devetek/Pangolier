@@ -21,7 +21,7 @@
     "lint"
   ],
   "lint-staged": {
-    "*.js": [
+    "*.{js,ts}": [
       "prettier --config .prettierrc --write",
       "eslint --fix",
       "git add"
@@ -75,6 +75,7 @@
     "@babel/preset-env": "^7.1.0",
     "@babel/register": "^7.0.0",
     "@ngtools/webpack": "^6.2.3",
+    "babel-eslint": "^9.0.0",
     "babel-loader": "^8.0.2",
     "babel-plugin-macros": "^2.4.0",
     "better-npm-run": "^0.1.1",
@@ -82,6 +83,8 @@
     "css-loader": "^1.0.0",
     "cssnano": "^4.1.0",
     "eslint": "^5.6.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^21.22.1",
     "eslint-plugin-typescript": "^0.12.0",
     "extract-loader": "^3.0.0",
     "file-loader": "^2.0.0",
@@ -121,6 +124,7 @@
     "@types/node": "^10.10.3",
     "app-root-dir": "^1.0.2",
     "bootstrap": "3.3.5",
+    "debug": "^4.0.1",
     "dotenv": "^6.0.0",
     "ejs": "^2.6.1",
     "express": "^4.16.3",

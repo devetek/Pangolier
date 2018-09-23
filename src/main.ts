@@ -1,11 +1,10 @@
-import "zone.js/dist/zone";
-//import "bootstrap";
+import 'zone.js/dist/zone';
 
-import { enableProdMode } from "@angular/core";
-import { platformBrowserDynamic } from "@angular/platform-browser-dynamic";
-import { AppModule } from "@app/init";
+import { enableProdMode } from '@angular/core';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { AppModule } from '@app/init';
 
-if (process.env.NODE_ENV === "production") {
+if (process.env.NODE_ENV === 'production') {
   enableProdMode();
 }
 
@@ -20,15 +19,15 @@ export function main() {
  */
 const removeLoader = () => {
   setTimeout(() => {
-    const element = document.getElementById("preloader");
+    const element = document.getElementById('preloader');
     element.remove();
   }, 2000);
 };
 
-if (document.readyState === "complete") {
+if (document.readyState === 'complete') {
   main();
 } else {
-  document.addEventListener("DOMContentLoaded", main);
+  document.addEventListener('DOMContentLoaded', main);
 }
 
 removeLoader();
