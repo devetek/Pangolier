@@ -42,8 +42,11 @@ yarn start
 
 ```sh
 cd web_dev
-docker-compose --file docker/dev.compose.yaml up
+docker-compose --file dev.compose.yaml build
+docker-compose --file dev.compose.yaml up -d
 ```
+
+you have 2 port when running with docker, 6051 and 90.
 
 ## Production Instalation
 
