@@ -1,13 +1,16 @@
-import { BrowserModule } from "@angular/platform-browser";
-import { NgModule, OnInit, AfterViewInit } from "@angular/core";
-import { HttpModule } from "@angular/http";
-import { AppComponent } from "@app/container"; // Bootsrap Component
-import { HeaderComponent } from "@app/layout/pixeladmin/header/app"; // Layout Component
-import { FooterComponent } from "@app/layout/pixeladmin/footer/app"; // Layout Component
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule, OnInit, AfterViewInit } from '@angular/core';
+import { HttpModule } from '@angular/http';
+import { AppComponent } from '@app/container'; // Bootsrap Component
+import { HeaderComponent } from '@app/layout/pixeladmin/header/app'; // Layout Component
+import { FooterComponent } from '@app/layout/pixeladmin/footer/app'; // Layout Component
 
-import { HomeComponent } from "@modules/home/app";
-import { AboutComponent } from "@modules/about/app";
-import { routing } from "@routes/index";
+import { routing } from '@routes/index';
+import { HomeComponent } from '@modules/home/app';
+import { AboutComponent } from '@modules/about/app';
+import { ServiceComponent } from '@modules/service/app';
+import { TeamComponent } from '@modules/team/app';
+import { PortfolioComponent } from '@modules/portfolio/app';
 
 /**
  * Global module initialization, define import module, define declaration module
@@ -21,7 +24,10 @@ import { routing } from "@routes/index";
     HeaderComponent,
     HomeComponent,
     AboutComponent,
-    FooterComponent
-  ]
+    ServiceComponent,
+    TeamComponent,
+    PortfolioComponent,
+    FooterComponent,
+  ],
 })
 export class AppModule {}

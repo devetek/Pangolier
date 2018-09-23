@@ -1,0 +1,20 @@
+FROM node:alpine
+
+ENV NODE_VERSION 10.11.0
+
+RUN mkdir -p /www/app/profile
+RUN npm i -g yarn
+RUN echo "127.0.0.1 localhost" >> /etc/hosts
+RUN cat /etc/hosts
+RUN hostname
+
+WORKDIR /www/app/profile
+
+COPY tools /www/app/profile
+COPY package.json /www/app/profile
+COPY yarn.lock /www/app/profile
+COPY .env.example /www/app/profile/.env
+
+RUN yarn cache clean && yarn install
+
+EXPOSE 6501

@@ -24,7 +24,9 @@ Company Profile Web for devetek.com, describe who we're and what we do. Please r
 - npm >= 5.6.0
 - yarn >= 1.9.4
 
-## Instalation
+## Development Instalation
+
+### Manual
 
 - Install dependencies [yarn](https://yarnpkg.com/lang/en/docs/install/), [node & npm](https://github.com/creationix/nvm#installation) in your local
 - clone repository
@@ -35,6 +37,17 @@ cp .env.example .env
 yarn
 yarn start
 ```
+
+### Docker
+
+```sh
+cd web_dev
+docker-compose --file docker/dev.compose.yaml up
+```
+
+## Production Instalation
+
+In progress
 
 ## devTech Feature
 

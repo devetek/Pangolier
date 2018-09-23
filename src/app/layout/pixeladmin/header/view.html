@@ -31,17 +31,20 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li ui-sref-active="active">
-              <a ui-sref="pages.main" role="button">Home</a>
+            <li>
+              <a [routerLink]="['']" role="button">Home</a>
             </li>
-            <li ui-sref-active="active">
-              <a ui-sref="pages.service" role="button">Service</a>
+            <li>
+              <a [routerLink]="['about']" role="button">About</a>
             </li>
-            <li ui-sref-active="active">
-              <a ui-sref="pages.team" role="button">Team</a>
+            <li>
+              <a [routerLink]="['service']" role="button">Service</a>
             </li>
-            <li ui-sref-active="active">
-              <a ui-sref="pages.last_project" role="button">Portfolio</a>
+            <li>
+              <a [routerLink]="['team']" role="button">Team</a>
+            </li>
+            <li>
+              <a [routerLink]="['portfolio']" role="button">Portfolio</a>
             </li>
 
           </ul>

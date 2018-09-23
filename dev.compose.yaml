@@ -1,0 +1,42 @@
+version: '3'
+services:
+  devetek-profile:
+    networks:
+      - deveteknetwork
+    build:
+      context: ./
+      dockerfile: ./docker/Development
+    volumes:
+      - ./:/www/app/profile/
+    ports:
+      - 6501:6501
+    depends_on:
+      - redis
+    environment:
+      NODE_ENV: development
+      DEVETEK_REDIS: devetek.redis.local
+    command: ['yarn', 'start']
+    container_name: devetek.profile.local
+
+  nginx:
+    image: nginx:1.14
+    links:
+      - devetek-profile
+    ports:
+      - '90:90'
+    volumes:
+      - ./server/nginx/devetek.profile.docker.conf:/etc/nginx/nginx.conf:ro
+
+  redis:
+    networks:
+      deveteknetwork:
+        aliases:
+          - redis.devetek.network
+    image: redis:latest
+    ports:
+      - 6379:6381
+    container_name: devetek.redis.local
+
+networks:
+  deveteknetwork:
+    driver: bridge
