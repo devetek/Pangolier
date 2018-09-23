@@ -9,5 +9,4 @@
 
 # local file cache
 .env
-yarn.lock
 yarn-error.log

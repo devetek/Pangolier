@@ -18,7 +18,9 @@
       "@app/*": ["app/*"],
       "@layout/*": ["app/layout/*"],
       "@routes/*": ["app/routes/*"],
-      "@modules/*": ["app/modules/*"]
+      "@modules/*": ["app/modules/*"],
+      "@helpers/*": ["helpers/*"]
     }
-  }
+  },
+  "exclude": ["node_modules", "dist"]
 }

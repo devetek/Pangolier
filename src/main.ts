@@ -1,12 +1,11 @@
 import "zone.js/dist/zone";
+//import "bootstrap";
 
 import { enableProdMode } from "@angular/core";
 import { platformBrowserDynamic } from "@angular/platform-browser-dynamic";
 import { AppModule } from "@app/init";
 
-let env = "development";
-
-if (env === "production") {
+if (process.env.NODE_ENV === "production") {
   enableProdMode();
 }
 

@@ -2,6 +2,7 @@
   "parser": "typescript-eslint-parser",
   "plugins": ["typescript"],
   "rules": {
-    "typescript/rule-name": "none"
+    "typescript/rule-name": "none",
+    "backface-visibility": "none"
   }
 }

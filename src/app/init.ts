@@ -1,5 +1,5 @@
 import { BrowserModule } from "@angular/platform-browser";
-import { NgModule } from "@angular/core";
+import { NgModule, OnInit, AfterViewInit } from "@angular/core";
 import { HttpModule } from "@angular/http";
 import { AppComponent } from "@app/container"; // Bootsrap Component
 import { HeaderComponent } from "@app/layout/pixeladmin/header/app"; // Layout Component
@@ -10,9 +10,8 @@ import { AboutComponent } from "@modules/about/app";
 import { routing } from "@routes/index";
 
 /**
- * This files is your module initialization, like define initial state, set initial global variables
- * adding new context to your hole apps, dont make any useless variables here
- * it will decrease our apps peformances, it will be impact to all apps context
+ * Global module initialization, define import module, define declaration module
+ * adding new modules to your hole apps, dont make any useless module
  */
 @NgModule({
   imports: [BrowserModule, HttpModule, routing],
@@ -25,8 +24,4 @@ import { routing } from "@routes/index";
     FooterComponent
   ]
 })
-export class AppModule {
-  constructor() {
-    // pass
-  }
-}
+export class AppModule {}
