@@ -8,19 +8,19 @@ Company Profile Web for devetek.com, describe who we're and what we do. Please r
 - Remove useless folders and files
 - Remove useless libs, replace with native javascript
 
-## Technology Stuck
+## Stuck In tech
 
+- javascript && typescript
 - node
 - HTML
 - CSS
-- Javascript
-- Typescript
-
-  check package.json for details our tech stuff
+- Docker
+- nginx
+- supervisor
 
 ## Dependencies
 
-- node >= v9.10.0
+- node >= 9.10.0
 - npm >= 5.6.0
 - yarn >= 1.9.4
 
