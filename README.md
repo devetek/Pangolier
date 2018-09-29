@@ -39,6 +39,8 @@ yarn
 yarn start
 ```
 
+Access [`http://localhost:6500`](http://localhost:6500).
+
 ### Docker
 
 - Install dependencies [Docker](https://docs.docker.com/install/)
@@ -49,7 +51,7 @@ docker-compose --file dev.compose.yaml build
 docker-compose --file dev.compose.yaml up -d
 ```
 
-you have 2 port when running with docker, 6051 and 90.
+Access [`http://localhost:6500`](http://localhost:6500).
 
 ## Production Instalation
 
