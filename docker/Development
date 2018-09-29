@@ -1,20 +1,23 @@
-FROM node:alpine
+FROM node:8.12.0
 
-ENV NODE_VERSION 10.11.0
+LABEL MAINTAINER Nedya Prakasa <prakasa@devetek.com>
 
+# make our require project directory
 RUN mkdir -p /www/app/profile
+
+# install yarn package manager
 RUN npm i -g yarn
-RUN echo "127.0.0.1 localhost" >> /etc/hosts
-RUN cat /etc/hosts
-RUN hostname
 
 WORKDIR /www/app/profile
 
-COPY tools /www/app/profile
-COPY package.json /www/app/profile
-COPY yarn.lock /www/app/profile
-COPY .env.example /www/app/profile/.env
+# copy all content in project directory exclude in .dockerignore
+COPY . /www/app/profile
 
+# make sure that all files is completed copied
+RUN ls -alh
+
+# clean cache then install all dependencies
 RUN yarn cache clean && yarn install
 
-EXPOSE 6501
+# expose port
+EXPOSE 6501 6500 90 80

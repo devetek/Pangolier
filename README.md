@@ -30,6 +30,7 @@ Company Profile Web for devetek.com, describe who we're and what we do. Please r
 
 - Install dependencies [yarn](https://yarnpkg.com/lang/en/docs/install/), [node & npm](https://github.com/creationix/nvm#installation) in your local
 - clone repository
+- run
 
 ```sh
 cd web_dev
@@ -39,6 +40,8 @@ yarn start
 ```
 
 ### Docker
+
+- Install dependencies [Docker](https://docs.docker.com/install/)
 
 ```sh
 cd web_dev

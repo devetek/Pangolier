@@ -1,3 +1,9 @@
-docker
+.git
+dist
+.idea
+.vscode
+.dockerignore
+yarn-error.log
 dev.compose.yml
+docker
 node_modules

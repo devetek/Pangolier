@@ -9,7 +9,8 @@ services:
     volumes:
       - ./:/www/app/profile/
     ports:
-      - 6501:6501
+      - '6500:6500'
+      - '6501:6501'
     depends_on:
       - redis
     environment:
@@ -19,7 +20,7 @@ services:
     container_name: devetek.profile.local
 
   nginx:
-    image: nginx:1.14
+    image: nginx:latest
     links:
       - devetek-profile
     ports:
@@ -34,7 +35,7 @@ services:
           - redis.devetek.network
     image: redis:latest
     ports:
-      - 6379:6381
+      - '6379:6381'
     container_name: devetek.redis.local
 
 networks:
