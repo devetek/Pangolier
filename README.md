@@ -15,8 +15,6 @@ Company Profile Web for devetek.com, describe who we're and what we do. Please r
 - HTML
 - CSS
 - Docker
-- nginx
-- supervisor
 
 ## Dependencies
 
