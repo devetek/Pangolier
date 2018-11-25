@@ -37,6 +37,8 @@ yarn
 yarn start
 ```
 
+Access [`http://localhost:6500`](http://localhost:6500).
+
 ### Makefile
 
 - Install dependencies [yarn](https://yarnpkg.com/lang/en/docs/install/), [node & npm](https://github.com/creationix/nvm#installation) in your local
