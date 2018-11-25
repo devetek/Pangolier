@@ -37,6 +37,16 @@ yarn
 yarn start
 ```
 
+### Makefile
+
+- Install dependencies [yarn](https://yarnpkg.com/lang/en/docs/install/), [node & npm](https://github.com/creationix/nvm#installation) in your local
+- clone repository
+- run
+
+```sh
+cd web_dev && make
+```
+
 Access [`http://localhost:6500`](http://localhost:6500).
 
 ### Docker
