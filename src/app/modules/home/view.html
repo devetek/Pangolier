@@ -1,1 +1,11 @@
-<p>Halaman Beranda</p>
+<p>Halaman Settings</p>
+<div class="member-preview" *ngFor="let member of results.data; let i = index">
+  <li>
+    <h2>
+      <a [routerLink]="['/settings', member.email]">{{ member.name }}</a>
+    </h2>
+    <p>{{ member.email }}</p>
+    <p>{{ member.phone }}</p>
+    <p>{{ member.website }}</p>
+  </li>
+</div>

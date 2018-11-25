@@ -1,7 +1,7 @@
-import { app } from "@app/config";
-import { Component, OnInit, AfterViewInit } from "@angular/core";
+import { app } from '@app/config';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 
-import { loadCss } from "@helpers/DOM";
+import { loadCss } from '@helpers/DOM';
 
 /**
  * Global variables initialization, like define initial state, set initial global variables
@@ -9,8 +9,8 @@ import { loadCss } from "@helpers/DOM";
  * it will decrease our apps peformances, it will be impact to all apps context
  */
 @Component({
-  selector: "profile-devetek",
-  templateUrl: "./container.html"
+  selector: 'profile-devetek',
+  templateUrl: './container.html',
 })
 export class AppComponent implements OnInit, AfterViewInit {
   title: string;
@@ -37,6 +37,6 @@ export class AppComponent implements OnInit, AfterViewInit {
   }
 
   devOnLoaded() {
-    loadCss(app.externalStyle, { inject: "endOfBody" });
+    loadCss(app.externalStyle, { inject: 'endOfBody' });
   }
 }

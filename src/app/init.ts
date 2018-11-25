@@ -1,33 +1,26 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, OnInit, AfterViewInit } from '@angular/core';
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 import { AppComponent } from '@app/container'; // Bootsrap Component
 import { HeaderComponent } from '@app/layout/pixeladmin/header/app'; // Layout Component
+import { HomeModule } from '@modules/home/module';
 import { FooterComponent } from '@app/layout/pixeladmin/footer/app'; // Layout Component
 
-import { routing } from '@routes/index';
-import { HomeComponent } from '@modules/home/app';
-import { AboutComponent } from '@modules/about/app';
-import { ServiceComponent } from '@modules/service/app';
-import { TeamComponent } from '@modules/team/app';
-import { PortfolioComponent } from '@modules/portfolio/app';
+/**
+ * Additional/custom modules, create yours or import third party here to use global
+ */
+import { ApiService } from '@app/services';
+import { RoutesModule } from '@routes/index';
 
 /**
  * Global module initialization, define import module, define declaration module
  * adding new modules to your hole apps, dont make any useless module
  */
 @NgModule({
-  imports: [BrowserModule, HttpModule, routing],
-  bootstrap: [AppComponent],
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    HomeComponent,
-    AboutComponent,
-    ServiceComponent,
-    TeamComponent,
-    PortfolioComponent,
-    FooterComponent,
-  ],
+  imports: [BrowserModule, HttpClientModule, RoutesModule, HomeModule],
+  declarations: [HeaderComponent, AppComponent, FooterComponent],
+  bootstrap: [AppComponent], // Bootstrap initial component
+  providers: [ApiService], // Define your custom global services
 })
 export class AppModule {}

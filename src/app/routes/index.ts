@@ -1,17 +1,24 @@
-import { RouterModule, Routes } from '@angular/router';
-
-import { HomeComponent } from '@modules/home/app';
-import { AboutComponent } from '@modules/about/app';
-import { ServiceComponent } from '@modules/service/app';
-import { TeamComponent } from '@modules/team/app';
-import { PortfolioComponent } from '@modules/portfolio/app';
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'about', component: AboutComponent },
-  { path: 'service', component: ServiceComponent },
-  { path: 'team', component: TeamComponent },
-  { path: 'portfolio', component: PortfolioComponent },
+  {
+    path: 'settings',
+    loadChildren: '@modules/settings/module#SettingsModule',
+  },
 ];
 
-export const routing = RouterModule.forRoot(routes);
+@NgModule({
+  imports: [
+    RouterModule.forRoot(routes, {
+      /**
+       * References from github.com, need to improve peformances
+       * implement a custom preloading strategy for just some
+       * of the modules
+       */
+      preloadingStrategy: PreloadAllModules,
+    }),
+  ],
+  exports: [RouterModule],
+})
+export class RoutesModule {}

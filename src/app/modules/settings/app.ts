@@ -3,11 +3,11 @@ import { MemberService } from '@app/services/member';
 import { Members } from '@app/services/member/model';
 
 @Component({
-  selector: 'home-module',
+  selector: 'settings-module',
   templateUrl: './view.html',
   styleUrls: ['./style.css'],
 })
-export class HomeComponent implements OnInit {
+export class SettingsComponent implements OnInit {
   loading: boolean = false;
   results: Members = { data: [], hasNext: false };
   hasNext: boolean = false;
