@@ -15,10 +15,10 @@ webpackConfig.serve = {
     },
   },
   host: process.env.HOST || 'localhost',
-  port: parseInt(process.env.PORT, 10) + 1 || 6501,
+  port: parseInt(process.env.PORT, 10),
   hot: {
     host: process.env.HOST || 'localhost',
-    port: parseInt(process.env.PORT, 10) + 2 || 6502,
+    port: parseInt(process.env.PORT, 10) + 1,
   },
 };
 

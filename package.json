@@ -10,7 +10,7 @@
   },
   "scripts": {
     "lint": "lint-staged",
-    "start": "bnr start",
+    "start": "rm -rf ./dist && bnr start",
     "build": "bnr build",
     "build:client": "webpack --config ./tools/webpack/client.config.js",
     "build:server": "webpack --config ./tools/webpack/server.config.js",
@@ -29,23 +29,21 @@
   },
   "betterScripts": {
     "start": {
-      "command": "npm-run-all --parallel start:client start:server",
+      "command": "npm-run-all --parallel start:client",
       "env": {
         "NODE_ENV": "development",
-        "HOST": "localhost",
-        "PORT": 6500
+        "HOST": "localhost"
       }
     },
     "build": {
-      "command": "npm-run-all --parallel build:server build:client",
+      "command": "npm-run-all --parallel build:client build:server",
       "env": {
         "NODE_ENV": "production",
-        "HOST": "localhost",
-        "PORT": 6500
+        "HOST": "localhost"
       }
     },
     "start:client": {
-      "command": "npm-run-all build:client",
+      "command": "webpack-serve --config ./tools/webpack/serve.config.js",
       "env": {
         "NODE_ENV": "development",
         "HOST": "localhost",
@@ -69,6 +67,7 @@
   "devDependencies": {
     "@angular/cli": "^6.2.3",
     "@angular/compiler-cli": "^6.1.8",
+    "@angularclass/hmr": "^2.1.3",
     "@babel/core": "^7.1.0",
     "@babel/plugin-proposal-class-properties": "^7.1.0",
     "@babel/plugin-proposal-decorators": "^7.1.0",
@@ -119,6 +118,7 @@
     "url-loader": "^1.1.1",
     "webpack": "^4.19.1",
     "webpack-cli": "^3.1.0",
+    "webpack-node-externals": "^1.7.2",
     "webpack-serve": "^2.0.2"
   },
   "dependencies": {
@@ -134,6 +134,7 @@
     "bootstrap": "3.3.5",
     "debug": "^4.0.1",
     "dotenv": "^6.0.0",
+    "dotenv-webpack": "^1.5.7",
     "ejs": "^2.6.1",
     "express": "^4.16.3",
     "font-awesome": "4.7.0",

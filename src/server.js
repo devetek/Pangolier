@@ -16,6 +16,4 @@ app.get('/*', (req, res) => {
   res.render('./index', { req, res });
 });
 
-app.listen(process.env.PORT, () => {
-  debug(`Listening on: http://${process.env.HOST}:${process.env.PORT}`);
-});
+export default app;
