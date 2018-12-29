@@ -1,5 +1,9 @@
 # Devetek Profile @next
 
+[![All Contributors](https://img.shields.io/badge/all_contributors-0-orange.svg?style=flat-square)](#contributors)
+
+[![All Contributors](https://img.shields.io/badge/all_contributors-0-orange.svg?style=flat-square)](#contributors)
+
 Company Profile Web for devetek.com, describe who we're and what we do. Please read this description bellow
 
 ## TODO:
@@ -74,7 +78,9 @@ In progress
 
 ## Contributors
 
-- Hamba Allah
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 
 ## References
 

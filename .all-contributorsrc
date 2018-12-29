@@ -1,0 +1,12 @@
+{
+  "projectName": "web_dev",
+  "projectOwner": "prakasa1904",
+  "repoType": "github",
+  "repoHost": "https://github.com/prakasa1904/web_dev",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "contributors": []
+}

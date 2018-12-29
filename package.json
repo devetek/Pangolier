@@ -15,7 +15,9 @@
     "build:client": "webpack --config ./tools/webpack/client.config.js",
     "build:server": "webpack --config ./tools/webpack/server.config.js",
     "start:client": "bnr start:client",
-    "start:server": "webpack --config ./tools/webpack/server.config.js"
+    "start:server": "webpack --config ./tools/webpack/server.config.js",
+    "contributors:add": "all-contributors add",
+    "contributors:generate": "all-contributors generate"
   },
   "pre-commit": [
     "lint"
@@ -81,6 +83,7 @@
     "@babel/preset-env": "7.2.3",
     "@babel/register": "7.0.0",
     "@ngtools/webpack": "7.1.4",
+    "all-contributors-cli": "^5.5.0",
     "babel-eslint": "10.0.1",
     "babel-loader": "8.0.4",
     "babel-plugin-macros": "2.4.3",
@@ -109,11 +112,11 @@
     "script-ext-html-webpack-plugin": "2.0.1",
     "start-server-webpack-plugin": "2.2.5",
     "style-loader": "0.23.1",
+    "terser-webpack-plugin": "^1.2.1",
     "to-string-loader": "1.1.5",
     "ts-loader": "5.3.2",
     "typescript": "3.1.1",
     "typescript-eslint-parser": "21.0.2",
-    "uglifyjs-webpack-plugin": "2.1.1",
     "url-loader": "1.1.1",
     "webpack": "4.28.3",
     "webpack-cli": "3.1.2",

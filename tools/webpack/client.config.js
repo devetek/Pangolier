@@ -5,7 +5,7 @@ const appRootDir = require('app-root-dir');
 const nodeExternals = require('webpack-node-externals');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const ScriptExtPlugin = require('script-ext-html-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
@@ -23,7 +23,7 @@ const webpackConfig = {
     app: [getPath('./src/main.ts')],
   },
   output: {
-    path: getPath('./dist'),
+    path: getPath('./dist/client'),
     filename: '[name].js',
   },
   resolve: {
@@ -38,10 +38,15 @@ const webpackConfig = {
   },
   optimization: {
     minimizer: [
-      new UglifyJsPlugin({
+      new TerserPlugin({
+        cache: true,
+        parallel: true,
         sourceMap: true,
-        uglifyOptions: {
+        terserOptions: {
           ecma: 8,
+          mangle: {
+            safari10: true,
+          },
           output: {
             ascii_only: true,
           },

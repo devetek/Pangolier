@@ -41,7 +41,7 @@ const webpackConfig = {
     server: ['webpack/hot/poll?1000', entryFile],
   },
   output: {
-    path: getPath('./dist'),
+    path: getPath('./dist/server'),
     filename: '[name].js',
   },
   externals: [
