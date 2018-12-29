@@ -5,7 +5,7 @@
 /dist
 
 # local cache
-.js.map
+*.js.map
 .vscode
 .DS_Store
 

@@ -31,8 +31,7 @@
     "start": {
       "command": "npm-run-all --parallel start:client start:server",
       "env": {
-        "NODE_ENV": "development",
-        "HOST": "localhost"
+        "NODE_ENV": "development"
       }
     },
     "build": {
