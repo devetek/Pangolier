@@ -1030,7 +1030,7 @@ ajv@^6.0.1, ajv@^6.1.0, ajv@^6.5.3, ajv@^6.5.5:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
-all-contributors-cli@^5.5.0:
+all-contributors-cli@5.5.0:
   version "5.5.0"
   resolved "https://registry.yarnpkg.com/all-contributors-cli/-/all-contributors-cli-5.5.0.tgz#e96219a7dab53f2e7303ad0d6f0743113c4b9171"
   dependencies:
