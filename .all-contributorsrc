@@ -1,12 +1,24 @@
 {
   "projectName": "web_dev",
-  "projectOwner": "prakasa1904",
+  "projectOwner": "arivin29",
   "repoType": "github",
-  "repoHost": "https://github.com/prakasa1904/web_dev",
+  "repoHost": "https://github.com",
   "files": [
     "README.md"
   ],
   "imageSize": 100,
   "commit": true,
-  "contributors": []
+  "contributors": [
+    {
+      "login": "prakasa1904",
+      "name": "Prakasa",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/6983524?v=4",
+      "profile": "http://www.terpusat.com",
+      "contributions": [
+        "code",
+        "platform",
+        "plugin"
+      ]
+    }
+  ]
 }

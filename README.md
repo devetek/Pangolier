@@ -1,4 +1,5 @@
 # Devetek Profile @next
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
 [![All Contributors](https://img.shields.io/badge/all_contributors-0-orange.svg?style=flat-square)](#contributors)
 
@@ -78,6 +79,11 @@ In progress
 
 ## Contributors
 
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+| [<img src="https://avatars1.githubusercontent.com/u/6983524?v=4" width="100px;"/><br /><sub><b>Prakasa</b></sub>](http://www.terpusat.com)<br />[💻](https://github.com/arivin29/web_dev/commits?author=prakasa1904 "Code") [📦](#platform-prakasa1904 "Packaging/porting to new platform") [🔌](#plugin-prakasa1904 "Plugin/utility libraries") |
+| :---: |
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
