@@ -12,8 +12,7 @@ Company Profile Web for devetek.com, describe who we're and what we do. Please r
 
 ## Stuck In tech
 
-- javascript & typescript
-- node
+- Javascript & Typescript
 - HTML
 - CSS
 - Docker
@@ -33,13 +32,11 @@ Company Profile Web for devetek.com, describe who we're and what we do. Please r
 - run
 
 ```sh
-cd web_dev
+cd Pangolier
 cp .env.example .env
 yarn
 yarn start
 ```
-
-Access [`http://localhost:6500`](http://localhost:6500).
 
 ### Makefile
 
@@ -48,22 +45,18 @@ Access [`http://localhost:6500`](http://localhost:6500).
 - run
 
 ```sh
-cd web_dev && make
+cd Pangolier && make
 ```
-
-Access [`http://localhost:6500`](http://localhost:6500).
 
 ### Docker
 
 - Install dependencies [Docker](https://docs.docker.com/install/)
 
 ```sh
-cd web_dev
+cd Pangolier
 docker-compose --file dev.compose.yaml build
 docker-compose --file dev.compose.yaml up -d
 ```
-
-Access [`http://localhost:6500`](http://localhost:6500).
 
 ## Production Instalation
 
@@ -71,14 +64,14 @@ In progress
 
 ## devTech Feature
 
-- Hot reload
-- Eslint
+- hot reload
+- eslint
 
 ## Contributors
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
-| [<img src="https://avatars1.githubusercontent.com/u/6983524?v=4" width="100px;"/><br /><sub><b>Prakasa</b></sub>](http://www.terpusat.com)<br />[💻](https://github.com/arivin29/web_dev/commits?author=prakasa1904 "Code") [📦](#platform-prakasa1904 "Packaging/porting to new platform") [🔌](#plugin-prakasa1904 "Plugin/utility libraries") [🚇](#infra-prakasa1904 "Infrastructure (Hosting, Build-Tools, etc)") [👀](#review-prakasa1904 "Reviewed Pull Requests") [🔧](#tool-prakasa1904 "Tools") |
+| [<img src="https://avatars1.githubusercontent.com/u/6983524?v=4" width="100px;"/><br /><sub><b>Prakasa</b></sub>](http://www.terpusat.com)<br />[💻](https://github.com/arivin29/Pangolier/commits?author=prakasa1904 "Code") [📦](#platform-prakasa1904 "Packaging/porting to new platform") [🔌](#plugin-prakasa1904 "Plugin/utility libraries") [🚇](#infra-prakasa1904 "Infrastructure (Hosting, Build-Tools, etc)") [👀](#review-prakasa1904 "Reviewed Pull Requests") [🔧](#tool-prakasa1904 "Tools") |
 | :---: |
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
