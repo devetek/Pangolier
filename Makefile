@@ -6,6 +6,7 @@ dev: define
 	@ echo "npm version:" $(NPM_VERSION)
 	@ echo "yarn version:" $(YARN_VERSION)
 	@ cp .env.example .env && yarn
+	@ yarn swagger:generate
 	@ echo "Run project in development manually using command \`yarn start\` or wait for 10 seconds in this process ...."
 	@ sleep 8
 	@ yarn start
