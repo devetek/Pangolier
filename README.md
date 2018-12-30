@@ -71,9 +71,8 @@ In progress
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
-| [<img src="https://avatars1.githubusercontent.com/u/6983524?v=4" width="100px;"/><br /><sub><b>Prakasa</b></sub>](http://www.terpusat.com)<br />[💻](https://github.com/arivin29/Pangolier/commits?author=prakasa1904 "Code") [📦](#platform-prakasa1904 "Packaging/porting to new platform") [🔌](#plugin-prakasa1904 "Plugin/utility libraries") [🚇](#infra-prakasa1904 "Infrastructure (Hosting, Build-Tools, etc)") [👀](#review-prakasa1904 "Reviewed Pull Requests") [🔧](#tool-prakasa1904 "Tools") |
+| [<img src="https://avatars1.githubusercontent.com/u/6983524?v=4" width="100px;"/><br /><sub><b>Prakasa</b></sub>](http://www.terpusat.com)<br />[💻](https://github.com/devetek/Pangolier/commits?author=prakasa1904 "Code") [📦](#platform-prakasa1904 "Packaging/porting to new platform") [🔌](#plugin-prakasa1904 "Plugin/utility libraries") [🚇](#infra-prakasa1904 "Infrastructure (Hosting, Build-Tools, etc)") [👀](#review-prakasa1904 "Reviewed Pull Requests") [🔧](#tool-prakasa1904 "Tools") |
 | :---: |
-
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 ## References
